@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+
+    <body>
+        <%- include('./partials/nav.ejs') %>
+            <div class="about content">
+                <div class="about-half" id="design">
+                    
+
+                <svg class="a" viewbox="0 0 50 50" width="50" height="50">
+                    <defs>
+                        <mask id="mask" x="0" y="0" width="100" height="49">
+                            <rect x="0.5" y="0.5" width="49" height="49" fill="#fff"/>
+                            <text class="b" x="20" text-anchor="middle" y="50" dy="0">S</text>
+                            <text class="b" x="25" id="ltrV" text-anchor="middle" y="50" dy="0">S</text>
+                            <text class="b" x="30" text-anchor="middle" y="50" dy="0">V</text>
+                        </mask>
+                    </defs>
+                    <rect x="0.5" y="0.5" width="49" height="49" mask="url(#mask)" fill-opacity="1" fill="#E3DFD2"/>
+                </svg>
+                <p style="color:#594f58; text-decoration: 2px overline; font-size: large;">-hover me-</p>
+            </div>
+                <div class="about-half">
+                    <h1>Susan Varghese</h1>
+                    <p>
+                        I'm a versatile creative professional with a passion for blending art 
+                        and technology to craft immersive gaming experiences. As an artist and 
+                        game programmer, I thrive on bringing virtual worlds to life, combining 
+                        my skills in visual design and coding to create captivating games that 
+                        resonate with players. Whether it's crafting stunning visuals, optimizing 
+                        performance, or solving complex game play challenges, I'm dedicated to pushing 
+                        the boundaries of interactive entertainment. With a keen eye for aesthetics 
+                        and a deep love for the gaming industry, I'm committed to delivering unforgettable 
+                        gaming adventures that leave a lasting impact on players worldwide.
+                    </p>
+                    <a href="/resume.pdf"><button>Learn More</button></a> 
+                    <!-- ? -->
+                </div>
+            </div>
+    </body>
+    <%- include('./partials/footer.ejs') %>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../partials/head.ejs") %>
+
+    <body>
+        <%- include("../partials/nav.ejs") %>
+
+        <div style="border:2px #4a2e47 dashed;text-align: center;position: relative;bottom: 40px;">
+            <h4 class="text">Contact me through: <p class="contact-detail">+1 647-472-3008 </p>or<p class="contact-detail"> susanvarghese.1301@gmail.com</p></h4>
+        </div>
+            <div class="create-blog content" style="position: relative;bottom: 40px;">
+                <form action="/contact" method="POST">
+                    <label for="title">Message title:</label>
+                    <input type="text" id="title" name="title" required>
+                    <label for="snippet">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="body">Message body:</label>
+                    <textarea id="body" name="body" required></textarea>
+                    <button>Submit</button>
+                </form>
+            </div>
+
+            <%- include("../partials/footer.ejs") %>
+    </body>
+
+</html>
